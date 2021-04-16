@@ -7,5 +7,6 @@ namespace Agenda_GitHub.Models
 {
     public class Teste
     {
+        int x;
     }
 }
