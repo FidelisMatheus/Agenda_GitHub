@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace Agenda_GitHub.Models
 {
-    public class Teste
+    public interface IAgendaRepositorio
     {
-        int x;
+        IQueryable<Agenda> Agendas { get; }
     }
 }
