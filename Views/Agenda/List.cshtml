@@ -1,13 +1,13 @@
 ﻿@model Agenda_GitHub.Models.ViewModels.AgendaListViewModel
 
-  
-@foreach (var item in Model.Agendas) {
+<a asp-action="Create">Adicionar Nova Anotaçao</a>
+   @foreach (var item in Model.Agendas) {
         <tr>
             <td>
                 <h4>@item.Anotacao </h4>
                 <h4>@item.Data </h4>
             </td>
-           
+
             <td>
                 <a asp-action="Edit" asp-route-id="@item.AgendaID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.AgendaID">Details</a> |
